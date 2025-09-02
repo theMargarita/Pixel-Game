@@ -20,19 +20,19 @@ const playAgainButton = document.getElementById("play-again-button");
 const startButton = document.getElementById("start-button");
 const instructions = document.getElementById("instructions");
 
-// Check if elements exist
-console.log("Elements check:");
-console.log("startButton:", startButton);
-console.log("gameContainer:", gameContainer);
-console.log("player:", player);
+// // Check if elements exist
+// console.log("Elements check:");
+// console.log("startButton:", startButton);
+// console.log("gameContainer:", gameContainer);
+// console.log("player:", player);
 
-//error handling
-if (!startButton) {
-  updateDebug("ERROR: Start button not found!");
-  console.error("Start button element not found!");
-} else {
-  updateDebug("Elements found, setting up...");
-}
+// //error handling
+// if (!startButton) {
+//   updateDebug("ERROR: Start button not found!");
+//   console.error("Start button element not found!");
+// } else {
+//   updateDebug("Elements found, setting up...");
+// }
 
 let playerPosition = { x: 360 };
 let gameWidth = 800;
@@ -47,8 +47,8 @@ let gameRunning = false;
 let keys = {};
 let createFoodInterval;
 
-const foodTypes = ["cookie", "apple", "banana", "broccoli"];
-const foodEmojis = { cookie: "🍪", apple: "🍎", banana: "🍌", broccoli: "🥦" };
+const foodTypes = ["cookie", "apple", "banana", "broccoli", "mushroom"];
+const foodEmojis = { cookie: "🍪", apple: "🍎", banana: "🍌", broccoli: "🥦", mushroom: "🍄‍🟫" };
 
 function updateHealthDisplay() {
   const hearts = "❤️".repeat(health) + "🖤".repeat(3 - health);

@@ -44,33 +44,39 @@ body {
 }
 
 .cookie {
-  background-color: #c68e17;
+  /* background-color: #c68e17; */
+  font-size: 30px;
+
   color: white;
 }
 
 .apple {
-  background-color: #ff0000;
+  /* background-color: #ff0000; */
+  font-size: 30px;
+
   color: white;
 }
 
 .banana {
-  background-color: #ffff00;
+  /* background-color: #ffff00; */
+  font-size: 30px;
+  
   color: black;
 }
 
 .broccoli {
-  background-color: #008000;
+  /* background-color: #008000; */
+  font-size: 30px;
+
   color: white;
 }
 
-/* .cloud {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100px;
-  height: 60px;
-  border-radius: 30px;
-  opacity: 0.7;
-} */
+.mushroom{
+  /* background-color: #8B4513; */
+  font-size: 30px;
+  color: white;
+}
+
 
 .cloud {
   position: absolute;

@@ -48,7 +48,13 @@ let keys = {};
 let createFoodInterval;
 
 const foodTypes = ["cookie", "apple", "banana", "broccoli", "mushroom"];
-const foodEmojis = { cookie: "🍪", apple: "🍎", banana: "🍌", broccoli: "🥦", mushroom: "🍄‍🟫" };
+const foodEmojis = {
+  cookie: "🍪",
+  apple: "🍎",
+  banana: "🍌",
+  broccoli: "🥦",
+  mushroom: "🍄‍🟫",
+};
 
 function updateHealthDisplay() {
   const hearts = "❤️".repeat(health) + "🖤".repeat(3 - health);
@@ -66,11 +72,11 @@ function takeDamage() {
     scoreContainer.classList.remove("damage-effect");
   }, 500);
 
-  if (health <= 0) {
+  if (hearts <= 0) {
     endGame(false, "You ate too much unhealthy food!");
     return true;
   }
-  return false;
+  // return false;
 }
 
 function startGame() {
